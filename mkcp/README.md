@@ -10,15 +10,7 @@
 * 已安装的用户，当出现无法连接的情况时，请用户根据该文档更新 V2ray core 
 * 请注意：我们依然强烈建议你全方面的了解整个程序的工作流程及原理
 
-### 目前支持Debian 9+ / Ubuntu 18.04+ / Centos7+
-* 本脚本默认安装最新版本的V2ray core
-* V2ray core 目前最新版本为 4.20（同时请注意客户端 core 的同步更新，需要保证客户端内核版本 >= 服务端内核版本）
-## V2ray core 更新方式
-执行：
-`bash <(curl -L -s https://install.direct/go.sh)`
-（ 来源参考 ：[V2ray官方说明](https://www.v2ray.com/chapter_00/install.html)）
-* 如果为最新版本，会输出提示并停止安装。否则会自动更新
-* 未来会将相关内容集成到本脚本中并进行交互式操作更新
+
 ## 注意事项
 * 推荐在纯净环境下使用本脚本，如果你是新手，请不要使用Centos系统。
 * 在尝试本脚本确实可用之前，请不要将本程序应用于生产环境中。
@@ -34,23 +26,6 @@
 
 #yum -y update && yum -y install unzip zip wget nano sudo curl firewalld redhat-lsb epel-release socat gcc git
 
-## 一鍵安裝
-
-#bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/tvonekey/master/mkcp/install.sh)
-
-
-
-
-
-## USER DATA安裝
-
-#!/bin/bash
-
-apt-get -y update
-
-apt-get -y install unzip zip wget curl  nano sudo ufw socat ntp ntpdate gcc git
-
-bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/tvonekey/master/mkcp/install.sh)
 
 
 ## 查看客户端配置信息
