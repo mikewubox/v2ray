@@ -340,6 +340,29 @@ acme_cron_update(){
     fi
     judge "cron 计划任务更新"
 }
+
+vmess_qr_config(){
+    cat >/etc/v2ray/vmess_qr.json <<-EOF
+    {
+        "v": "2",
+        "ps": "wulabing_${ip}",
+        "add": "${domain}",
+        "port": "${port}",
+        "id": "${UUID}",
+		"aid": "${alterID}",
+        "net": "ws",
+        "type": "none",
+        "host": "",
+        "path": "/${camouflage}/",
+        "tls": "tls"
+    }
+EOF
+
+    vmess_link="vmess://$(cat /etc/v2ray/vmess_qr.json | base64 -w 0)"
+    echo -e "${Red} URL导入链接:${vmess_link} ${Font}" >>./v2ray_info.txt
+    
+}
+
 show_information(){
     clear
 
@@ -354,7 +377,8 @@ show_information(){
     echo -e "${Red} 伪装类型（type）：${Font} none "
     echo -e "${Red} 路径（不要落下/）：${Font} /${camouflage}/ "
     echo -e "${Red} 底层传输安全：${Font} tls "
-
+    vmess_qr_config
+    cat ./v2ray_info.txt
     
 
 }
