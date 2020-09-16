@@ -43,5 +43,9 @@ v2rayN  作者网址  https://github.com/2dust/v2rayN/releases
 
 #./go.sh --local v2ray-linux-64.zip
 
-#  基于Nginx 的 vmess+ws+tls 一键安装脚本
+#  基于Nginx 的 vmess+ws+tls+CDN 一键安装脚本，仅支持TLS1.2,TLS1.3
+## 安装之前注册一个域名，并在cludflare解析好域名，新人建议用干净的debian10 VPS
+## 安装过程时间校准提示错误，不影响使用；伪装网站看不出啥作用。
+## 重点--安装完毕后设置cloudflare白名单防火墙，杜绝任何人扫描及访问。
+
 #bash <(curl -L -s https://raw.githubusercontent.com/mikewubox/v2ray/master/install.sh) | tee v2ray_ins.log
