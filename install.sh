@@ -171,7 +171,9 @@ modify_nginx(){
 web_camouflage(){
     ##请注意 这里和LNMP脚本的默认路径冲突，千万不要在安装了LNMP的环境下使用本脚本，否则后果自负
     rm -rf /home/wwwroot && mkdir -p /home/wwwroot && cd /home/wwwroot
-    git clone https://github.com/mikewubox/sCalc.git
+    wget https://github.com/mikewubox/mikewubox.github.io/archive/master.zip
+    unzip master.zip
+    cp -rf mikewubox.github.io-master/* /var/www/html
     judge "web 站点伪装"   
 }
 v2ray_install(){
@@ -294,7 +296,7 @@ nginx_conf_add(){
         add_header Strict-Transport-Security "max-age=63072000" always;
         server_name           serveraddr.com;
         index index.html index.htm;
-        root  /home/wwwroot/sCalc;
+        root  /var/www/html/;
         error_page 400 = /400.html;
         location /ray/ 
         {
