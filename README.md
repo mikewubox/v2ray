@@ -2,14 +2,14 @@
 ### v2ray官网一键代码失效，v2fly算是个全新的工具，安装、配置、兼容都有变化，不习惯。
 ##### 基于安全、简单、有效原则收集。本地安装参考源 https://www.v2ray.com/chapter_00/install.html#gosh
 ### v4.25对老版本客户端兼容更好 v4.27的服务器只能兼容v4.27的客户端
-## 端口，域名，路徑，UUID，强化安全，等請自行修改，如果手动安装，請勿照搬照抄。謹防VPS大盜，劫持你的VPS。
-##### 偽站點建議自己生成
-##### 多用戶多端口配置生成 https://intmainreturn0.com/v2ray-config-gen/
-##### UUID 生成 https://www.uuidgenerator.net/
-##### SSL Security Test https://www.immuniweb.com/ssl/
-##### SSL Configuration Generator https://ssl-config.mozilla.org/
-##### 強隨機密碼生成（至少16位）https://passwordsgenerator.net/
-##### 瀏覽器安全檢測 https://www.cloudflare.com/ssl/encrypted-sni/
+### 端口，域名，路徑，UUID，强化安全，等請自行修改，如果手动安装，請勿照搬照抄。謹防VPS大盜，劫持你的VPS。
+#### 偽站點建議自己生成
+#### 多用戶多端口配置生成 https://intmainreturn0.com/v2ray-config-gen/
+#### UUID 生成 https://www.uuidgenerator.net/
+#### SSL Security Test https://www.immuniweb.com/ssl/
+#### SSL Configuration Generator https://ssl-config.mozilla.org/
+#### 強隨機密碼生成（至少16位）https://passwordsgenerator.net/
+#### 瀏覽器安全檢測 https://www.cloudflare.com/ssl/encrypted-sni/
 
 ## Debian10常用软件包
    root用户下安装,如果用iptables代码，请关闭防火墙ufw
