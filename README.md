@@ -55,7 +55,7 @@ v2rayN  作者网址  https://github.com/2dust/v2rayN/releases
 ### 简单快捷一键完事，只需输入域名。端口默认443，其他随机产生。
 ### 安装之前注册一个域名，并在cludflare解析好域名，新人建议用干净的debian10 VPS
 #### 伪装网站看不出啥作用。https://github.com/mikewubox/mikewubox.github.io
-### 重点--安装完毕后设置cloudflare白名单防火墙，杜绝任何人扫描及访问。
+### 重点--安装完毕后设置cloudflare白名单防火墙，杜绝非法扫描及访问。
 
 
 #bash <(curl -L -s https://raw.githubusercontent.com/mikewubox/v2ray/master/install.sh) | tee v2ray_ins.log
