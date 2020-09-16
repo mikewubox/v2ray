@@ -151,9 +151,9 @@ v2ray_install(){
         rm -rf /etc/v2ray
     fi
     mkdir -p /root/v2ray && cd /root/v2ray
-   wget  https://raw.githubusercontent.com/mikewubox/v2ray427/master/go.sh
-   wget  https://github.com/mikewubox/v2ray427/raw/master/v2ray-linux-64.zip
-    ## wget http://install.direct/go.sh
+   wget  https://raw.githubusercontent.com/mikewubox/v2ray/master/go.sh
+   wget  https://github.com/mikewubox/v2ray/raw/master/v2ray427/v2ray-linux-64.zip
+    ## wget go.sh v2ray4.27
     chmod 777 go.sh
     chmod 777 v2ray-linux-64.zip
     if [[ -f go.sh ]] ; then
@@ -172,7 +172,7 @@ v2ray_install(){
 
 v2ray_conf_add(){
     cd /etc/v2ray
-    wget https://raw.githubusercontent.com/mikewubox/tvonekey/master/mkcp/config.json -O config.json
+    wget https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/config.json -O config.json
 modify_port_UUID
 judge "V2ray 配置修改"
 }
