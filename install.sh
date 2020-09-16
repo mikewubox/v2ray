@@ -289,8 +289,9 @@ nginx_conf_add(){
         ssl on;
         ssl_certificate       /etc/v2ray/v2ray.crt;
         ssl_certificate_key   /etc/v2ray/v2ray.key;
-        ssl_protocols         TLSv1 TLSv1.1 TLSv1.2;
-        ssl_ciphers           HIGH:!aNULL:!MD5;
+        ssl_protocols         TLSv1.2 TLSv1.3;
+        ssl_ciphers           ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+        add_header Strict-Transport-Security "max-age=63072000" always;
         server_name           serveraddr.com;
         index index.html index.htm;
         root  /home/wwwroot/sCalc;
