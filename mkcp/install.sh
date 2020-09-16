@@ -206,11 +206,11 @@ vmess_qr_config(){
     cat >/etc/v2ray/vmess_qr.json <<-EOF
     {
         "v": "2",
-        "ps": "wulabing_${ip}",
+        "ps": "v2KCP_${ip}",
         "add": "${ip}",
         "port": "${PORT}",
         "id": "${UUID}",
-		"aid": "${alterID}",
+	"aid": "${alterID}",
         "net": "kcp",
         "type": "none",
         "host": "",
