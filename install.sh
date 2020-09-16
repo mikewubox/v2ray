@@ -351,11 +351,11 @@ vmess_qr_config(){
     cat >/etc/v2ray/vmess_qr.json <<-EOF
     {
         "v": "2",
-        "ps": "wulabing_${ip}",
+        "ps": "v2ray3_${ip}",
         "add": "${domain}",
         "port": "${port}",
         "id": "${UUID}",
-		"aid": "${alterID}",
+	"aid": "${alterID}",
         "net": "ws",
         "type": "none",
         "host": "",
