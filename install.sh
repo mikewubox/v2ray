@@ -149,10 +149,8 @@ dependency_install(){
     judge "安装 unzip"
 }
 port_alterid_set(){
-    stty erase '^H' && read -p "请输入连接端口（default:443）:" port
-    [[ -z ${port} ]] && port="443"
-    stty erase '^H' && read -p "请输入alterID（default:64）:" alterID
-    [[ -z ${alterID} ]] && alterID="64"
+    port="443"
+    alterID=$(shuf -i1-100 -n1)
 }
 modify_port_UUID(){
     let PORT=$RANDOM+10000
@@ -229,7 +227,7 @@ ssl_install(){
 
 }
 domain_check(){
-    stty erase '^H' && read -p "请输入你的域名信息(eg:www.wulabing.com):" domain
+    stty erase '^H' && read -p "请输入你的域名信息(eg:www.github.com):" domain
     domain_ip=`ping ${domain} -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
     echo -e "${OK} ${GreenBG} 正在获取 公网ip 信息，请耐心等待 ${Font}"
     local_ip=`curl -4 ip.sb`
