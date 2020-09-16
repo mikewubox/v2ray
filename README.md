@@ -21,6 +21,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/in
 查看配置 cat ./v2ray_info.txt
 
 v2ray4.27版客户端版本，能兼容老版本和4.27版服务器
+
 对应的v2rayN3.21版 win64 客户端 https://github.com/mikewubox/v2ray/tree/master/v2rayn321
            
 v2rayN  作者网址  https://github.com/2dust/v2rayN/releases
