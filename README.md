@@ -1,5 +1,5 @@
-# 收集整理一键脚本，所有权利归原作者所有，本人不是程序员，也不懂代码。
- 官网一键代码，各路大神的大多数原版一键脚本已删贴走人隐居甚至失效。
+# 收集一键脚本，所有权利归原作者所有，本人不是程序员，也不懂代码。
+## 官网一键代码，各路大神的大多数原版一键脚本已删贴走人隐居甚至失效。
 
 ## Debian10常用软件包
    root用户下安装,如果用iptables代码，请关闭防火墙ufw
@@ -19,16 +19,15 @@ bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/in
 
 查看配置 cat ./v2ray_info.txt
 
-匹配 v2rayN win64 客户端 https://github.com/mikewubox/v2ray/tree/master/v2rayn321
+v2ray4.27版客户端版本，能兼容老版本和4.27版服务器
+对应的v2rayN3.21版 win64 客户端 https://github.com/mikewubox/v2ray/tree/master/v2rayn321
            
-        v2rayN  作者网址 https://github.com/2dust/v2rayN/releases
+v2rayN  作者网址  https://github.com/2dust/v2rayN/releases
 
-
+安卓版对应的是V2rayNG1.3,作者网址--同上
 
 ## v2ray4.27独立版官方克隆脚本安装
 #bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/tvonekey/master/go.sh)
-
-
 
 #  基于Nginx 的 vmess+ws+tls 一键安装脚本
 #bash <(curl -L -s https://raw.githubusercontent.com/mikewubox/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
