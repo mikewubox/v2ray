@@ -369,7 +369,8 @@ EOF
 
 show_information(){
     clear
-
+    cd ~
+    
     echo -e "${OK} ${Green} V2ray+ws+tls 安装成功 " >./v2ray_info.txt
     echo -e "${Red} V2ray 配置信息 ${Font}" >>./v2ray_info.txt
     echo -e "${Red} 地址（address）:${Font} ${domain} " >>./v2ray_info.txt
