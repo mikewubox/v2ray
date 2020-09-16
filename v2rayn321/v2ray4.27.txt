@@ -1,0 +1,2 @@
+匹配服务端v2ray4.27
+Add VLESS support（v2ray-core v4.27.0+）
