@@ -7,7 +7,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/in
 查看配置 cat ./v2ray_info.txt
 
 匹配 v2rayN win64 客户端 https://github.com/mikewubox/v2ray/tree/master/v2rayn321
-           作者网址 https://github.com/2dust/v2rayN/releases
+           
+v2rayN  作者网址 https://github.com/2dust/v2rayN/releases
+
 ## Debian10常用软件包
    root用户下安装,如果用iptables代码，请关闭防火墙ufw
 
