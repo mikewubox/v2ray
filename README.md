@@ -44,4 +44,4 @@ v2rayN  作者网址  https://github.com/2dust/v2rayN/releases
 #./go.sh --local v2ray-linux-64.zip
 
 #  基于Nginx 的 vmess+ws+tls 一键安装脚本
-#bash <(curl -L -s https://raw.githubusercontent.com/mikewubox/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
+#bash <(curl -L -s https://raw.githubusercontent.com/mikewubox/v2ray/master/install.sh) | tee v2ray_ins.log
