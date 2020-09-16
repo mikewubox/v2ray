@@ -3,7 +3,6 @@
 ##### 基于安全、简单、有效原则收集。本地安装参考源 https://www.v2ray.com/chapter_00/install.html#gosh
 ### v4.25对老版本客户端兼容更好 v4.27的服务器只能兼容v4.27的客户端
 ### 安全第一，謹防VPS大盜，劫持你的VPS，盗窃流量。
-#### 偽站點建議自己生成
 #### 多用戶多端口配置生成 https://intmainreturn0.com/v2ray-config-gen/
 #### UUID 生成 https://www.uuidgenerator.net/
 #### SSL Security Test https://www.immuniweb.com/ssl/
