@@ -450,8 +450,7 @@ firewall_iptables(){
     iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
     iptables -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
     iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
-    iptables -A INPUT -p tcp -m tcp --dport $port -j ACCEPT
-
+    
     # block ping means ICMP port is close (If you do not want ping replace ACCEPT with REJECT)
     iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
     iptables -A OUTPUT -p icmp --icmp-type echo-reply -j DROP
