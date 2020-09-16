@@ -31,12 +31,16 @@ v2rayN  作者网址  https://github.com/2dust/v2rayN/releases
 ## v2ray4.25或4.27独立版单独安装，无配置
 #wget  https://raw.githubusercontent.com/mikewubox/v2ray/master/go.sh
 
-#wget  https://github.com/mikewubox/v2ray/raw/master/v2ray425/v2ray-linux-64.zip
+#wget  https://github.com/mikewubox/v2ray/raw/master/v2ray425/v2ray-linux-64.zip   ##安装4.25版##
+
 或
-#wget  https://github.com/mikewubox/v2ray/raw/master/v2ray427/v2ray-linux-64.zip
+
+#wget  https://github.com/mikewubox/v2ray/raw/master/v2ray427/v2ray-linux-64.zip   ##安装4.27版##
     
 #chmod 777 go.sh
+
 #chmod 777 v2ray-linux-64.zip
+
 #./go.sh --local v2ray-linux-64.zip
 
 #  基于Nginx 的 vmess+ws+tls 一键安装脚本
