@@ -22,6 +22,7 @@
 
 ## V2ray4.27一鍵完事，mKCP安裝純净極速版+BBR+iptables安全代码
 加了强化VPS安全的iptable规则代码，反扫描，拉黑IP,10个月，反攻击；
+Generates random server port &UUID&alterID
 
 #bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/install.sh)
 
@@ -36,7 +37,7 @@ v2rayN  作者网址  https://github.com/2dust/v2rayN/releases
 安卓版对应的是V2rayNG1.3,作者网址--同上
 
 ###  v4.27版，基于Nginx 的 vmess+ws+tls+CDN 一键安装脚本+BBR+iptables安全代码，仅支持TLS1.2,TLS1.3 
-### 简单快捷一键完事，只需输入域名。端口默认443，其他随机产生。
+### 简单快捷一键完事，只需输入域名。端口默认443，Generates random UUID&alterID
 ### 安装之前注册一个域名，并在cludflare解析好域名，新人建议用干净的debian10 VPS
 #### 伪装网站看不出啥作用。https://github.com/mikewubox/mikewubox.github.io
 ### 重点--安装完毕后设置cloudflare白名单防火墙，杜绝非法扫描及访问。
