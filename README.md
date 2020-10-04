@@ -9,7 +9,9 @@
 #### SSL Configuration Generator https://ssl-config.mozilla.org/
 #### 強隨機密碼生成（至少16位）https://passwordsgenerator.net/
 #### 瀏覽器安全檢測 https://www.cloudflare.com/ssl/encrypted-sni/
-#### 端口扫描nmap指令集（测试自己VPS安全度） https://securitytrails.com/blog/top-15-nmap-commands-to-scan-remote-hosts
+#### 端口扫描nmap指令参考集（测试自己VPS安全防卫效果） https://securitytrails.com/blog/top-15-nmap-commands-to-scan-remote-hosts  
+                                        https://www.stationx.net/nmap-cheat-sheet/
+                                        https://phoenixnap.com/kb/nmap-command-linux-examples
 
 ## Debian10常用软件包
    root用户下安装,如果用iptables代码，请关闭防火墙ufw
