@@ -18,12 +18,12 @@
 ## Debian10常用软件包
    root用户下安装,如果用iptables代码，请关闭防火墙ufw
 
-#apt-get -y update && apt-get -y install unzip zip wget curl mc nano sudo socat ntp ntpdate gcc git
+#apt-get -y update && apt-get -y install unzip zip wget curl lrzsz nano sudo socat  gcc git
 
 ## CentOS8常用软件包
    root用户下安装，如果用iptables代码，请关闭防火墙firewalld
 
-#yum -y update && yum -y install unzip zip wget nano sudo curl  redhat-lsb epel-release socat gcc git
+#yum -y update && yum -y install unzip zip wget nano sudo curl lrzsz redhat-lsb epel-release socat gcc git
 
 ## V2ray4.27一鍵完事，mKCP安裝純净極速版+BBR+iptables安全代码
 ### 加了强化VPS安全的iptable规则代码，反扫描，拉黑IP,10个月，反攻击；
