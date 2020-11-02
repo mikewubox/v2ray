@@ -38,8 +38,10 @@
 
 返回值有 tcp_bbr 模块即说明 bbr 已启动
 
-查看iptables状态 #iptables -L -v
-
+查看iptables状态 #iptables -L -v  
+                #iptables -L -n -v -x
+                
+                
 VPS重启后，iptables安全代码会复原失效，可手动建立本地文件，重新执行一遍。
 
 v2ray4.27版客户端版本，能兼容老版本和4.27版服务器
