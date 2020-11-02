@@ -31,9 +31,11 @@
 
 #bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/install.sh)
 
-VPS重启后，iptables安全代码会复原失效，可手动建立本地文件，重新执行一遍。
 
-查看配置 cat ./v2ray_info.txt
+查看V2配置 #cat ./v2ray_info.txt
+
+查看iptables状态 #iptables -L -v
+VPS重启后，iptables安全代码会复原失效，可手动建立本地文件，重新执行一遍。
 
 v2ray4.27版客户端版本，能兼容老版本和4.27版服务器
 
