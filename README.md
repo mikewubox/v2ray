@@ -20,14 +20,15 @@
 
 #apt-get -y update && apt-get -y install unzip zip wget curl lrzsz nano sudo socat  gcc git
 
-#### 确保iptables重启有效，安装是选择YES即可，debian10验证
-   #apt-get install iptables-persistent
 ## V2ray4.27一鍵完事，mKCP安裝純净極速版+BBR+iptables安全代码
 ### 加了强化VPS安全的iptable规则代码，反扫描，拉黑IP,10个月，反攻击；
 ### Generates random server port &UUID&alterID
 
 #bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/install.sh)
 
+### VPS重启后，iptables安全代码会复原失效
+### 确保iptables重启有效，最后安装，安装时选择YES即可，debian10验证通过
+  #apt-get install iptables-persistent
 
 查看V2配置 #cat ./v2ray_info.txt
 
@@ -38,9 +39,6 @@
 查看iptables状态 #iptables -L -v  
                 #iptables -L -n -v -x
                 
-                
-VPS重启后，iptables安全代码会复原失效，可手动建立本地文件，重新执行一遍。
-
 v2ray4.27版客户端版本，能兼容老版本和4.27版服务器
 
 对应的v2rayN3.21版 win64 客户端 https://github.com/mikewubox/v2ray/tree/master/v2rayn321
