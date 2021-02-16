@@ -2,7 +2,7 @@
 ### v2ray官网一键代码失效，v2fly算是个全新的工具，安装、配置、兼容都有变化，个人自用老版本足矣。
 ##### 基于安全、简单、有效原则收集。本地安装参考源 https://www.v2ray.com/chapter_00/install.html#gosh
 ### v4.25对老版本客户端兼容更好 v4.27的服务器只能兼容v4.27的客户端
-### 安全第一，謹防VPS大盜，劫持你的VPS，盗窃流量。VPS重启后iptables规则失效，请注意修补。
+### 安全第一，謹防VPS大盜，劫持你的VPS，盗窃流量。VPS重启后iptables规则失效，请修补。
 #### 多用戶多端口配置生成 https://intmainreturn0.com/v2ray-config-gen/
 #### UUID 生成 https://www.uuidgenerator.net/
 #### SSL Security Test https://www.immuniweb.com/ssl/
@@ -22,11 +22,6 @@
 
 #### 确保iptables重启有效，安装是选择YES即可，debian10验证
    #apt-get install iptables-persistent
-## CentOS8常用软件包
-   root用户下安装，如果用iptables代码，请关闭防火墙firewalld
-
-#yum -y update && yum -y install unzip zip wget nano sudo curl lrzsz redhat-lsb epel-release socat gcc git
-
 ## V2ray4.27一鍵完事，mKCP安裝純净極速版+BBR+iptables安全代码
 ### 加了强化VPS安全的iptable规则代码，反扫描，拉黑IP,10个月，反攻击；
 ### Generates random server port &UUID&alterID
