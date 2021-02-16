@@ -27,7 +27,7 @@
 #bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/install.sh)
 
 ### VPS重启后，iptables安全代码会复原失效
-### 确保iptables重启有效，最后安装，安装时选择YES即可，debian10验证通过
+### 确保iptables重启有效，最后安装iptables-persistent，安装时选择YES即可，debian10验证通过
   #apt-get install iptables-persistent
 
 查看V2配置 #cat ./v2ray_info.txt
