@@ -312,7 +312,7 @@ firewall_iptables(){
 
     # Lastly DROP All INPUT traffic
     iptables -A INPUT -j DROP
-    apt-get install -y iptables-persistent
+    apt-get -y install  iptables-persistent
 }
 
 main(){
