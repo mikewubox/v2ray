@@ -302,10 +302,8 @@ firewall_iptables(){
     iptables -A FORWARD -p tcp -m tcp --dport 139 -m recent --name portscan --set -j DROP
 
     # Allow the following ports through from outside
-    iptables -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
     iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
-    iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
-    iptables -A INPUT -p udp -m udp --dport $PORT -j ACCEPT
+   iptables -A INPUT -p udp -m udp --dport $PORT -j ACCEPT
 
     # block ping means ICMP port is close (If you do not want ping replace ACCEPT with REJECT)
     iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
