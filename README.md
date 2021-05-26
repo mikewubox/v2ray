@@ -24,8 +24,7 @@
 
 #apt-get -y update && apt-get -y install unzip zip wget curl lrzsz nano sudo socat  gcc git
 
-## V2ray4.27一鍵完事，mKCP安裝純净極速版+BBR+iptables安全代码
-### 加了强化VPS安全的iptable规则代码，反扫描，拉黑IP,10个月，反攻击；
+## V2ray4.27一鍵完事，mKCP安裝純净極速版+BBR
 ### Generates random server port &UUID&alterID
 
 #bash <(curl -Ls https://raw.githubusercontent.com/mikewubox/v2ray/master/mkcp/install.sh)
